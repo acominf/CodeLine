@@ -6,30 +6,24 @@ La aplicación que se propone es una app para enseñar a programar desde cero, "
 En la app se implementará completar código, para que el usuario desarrolle la habilidad de detectar código más fácilmente, así como también algunos ejercicios que tendrá que resolver para obtener el nivel de conocimiento actual. El usuario contará con la opción de omitir la primer parte, si es que su interés es solo aprender el lenguaje y a programar al mismo tiempo.
 
 ### Clases principales y sus características
-1. Clase 1
-* caracteristica1
-* caracteristica2
-* caracteristica3
+1. CodeLine
+* Nos permite visualizar las lecciones
+* Nos brinda la interfaz del usuario
+* Nos muestra la sección en la que estamos trabajando
 
-2. Clase 2
-* caracteristica1
-* caracteristica2
-* caracteristica3
+2. Seccion
+* Engloba todas las lecciones que pertenecen al modo en específico
 
-3. Clase 3
-* caracteristica1
-* caracteristica2
-* caracteristica3
+3. Cuenta
+* Tiene todas las características propias del usuario
+* Guarda el puntaje que se obtenga conforme se realizen lecciones
 
-4. Clase 4
-* caracteristica1
-* caracteristica2
-* caracteristica3
+4. Leccion
+* Tiene la información de una sola lección
+* También tiene los ejemplos necesarios
 
-5. Clase 5
-* caracteristica1
-* caracteristica2
-* caracteristica3
+5. Ejercicio
+* Tiene el ejercicio que en cada lección tendra
 
 ### Diagrama de clases
 ![Diagrama de clases](https://github.com/acominf/CodeLine/blob/master/Diagrama/CodeLine.png)
