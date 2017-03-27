@@ -32,7 +32,7 @@ En la app se implementará completar código, para que el usuario desarrolle la 
 * caracteristica3
 
 ### Diagrama de clases
-![Diagrama de clases](url-del-diagrama.png)
+![Diagrama de clases](https://github.com/acominf/CodeLine/blob/master/Diagrama/CodeLine.png)
 
 ### Autor(es)
 El autor(es) del proyecto son:
