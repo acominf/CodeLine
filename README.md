@@ -1,7 +1,7 @@
-### Objetivo del juego/aplicación
+### Objetivo de la aplicación
 Fomentar el aprendizaje de lenguajes de programación con el uso de una aplicación en desarrollo. Y así obtener mayor cantidad de personas que programen dispuestos a desarrollar una app genuina e innovadora.
 
-### Descripción del juego/aplicación
+### Descripción de la aplicación
 La aplicación que se propone es una app para enseñar a programar desde cero, "lecciones" para programar, pensado para personas que nunca han programado en su vida, de momento la app contará con dos secciones: la primera consiste en aprender a programar sin ningún lenguaje de programación, es decir, programar con pseudocódigo, con el fin de ir preparando la capacidad de programación del usuario para que a continuación pueda aprender un lenguaje en específico; y la segunda sección es aprender un lenguaje de programación en concreto, de momento proponemos que el lenguaje inicial sea C, ya que es un lenguaje sencillo y estructurado que necesita de sintaxis especifica. De este lenguaje solo se planea trabajar lo básico sin llegar a gráficos, debido a que gráficos es más extenso. 
 En la app se implementará completar código, para que el usuario desarrolle la habilidad de detectar código más fácilmente, así como también algunos ejercicios que tendrá que resolver para obtener el nivel de conocimiento actual. El usuario contará con la opción de omitir la primer parte, si es que su interés es solo aprender el lenguaje y a programar al mismo tiempo.
 
