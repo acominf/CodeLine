@@ -66,7 +66,6 @@ public class Sesion extends javax.swing.JFrame {
 
         l_usuario.setText("Usuario:");
 
-        i_iconsesion.setIcon(new javax.swing.ImageIcon("C:\\Users\\Rodrigo\\Desktop\\PROYECTO CODELINE\\CodeLine\\CodeLine_v\\Icons\\login.png")); // NOI18N
         i_iconsesion.setText("imagen_sesion");
         i_iconsesion.setPreferredSize(new java.awt.Dimension(200, 200));
 
