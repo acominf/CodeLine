@@ -5,6 +5,7 @@ public class Account
 	private String userID;
 	private String email;
 	private String password;
+        private int puntaje;
 	ArrayList<Object> arrayAccounts = new ArrayList<Object>();
 	
 	public ArrayList<Object> getArrayAccounts()
@@ -22,6 +23,14 @@ public class Account
 		return userID;
 	}
 
+       public int getPuntaje() {
+           return puntaje;
+       }     
+       
+       public void setPuntaje(int pu) {
+           this.puntaje = pu;
+       }
+       
 	public void setUserID(String userID) {
 		this.userID = userID;
 	}

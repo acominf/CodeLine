@@ -43,6 +43,8 @@ public class CrearCuenta extends javax.swing.JFrame {
         b_registrar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(0, 255, 0));
+        setForeground(java.awt.Color.yellow);
 
         b_cargar.setText("Cargar");
         b_cargar.addActionListener(new java.awt.event.ActionListener() {
@@ -119,12 +121,12 @@ public class CrearCuenta extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(287, 287, 287)
                         .addComponent(b_cargar)
-                        .addGap(110, 110, 110)
+                        .addGap(139, 139, 139)
                         .addComponent(b_borrar))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(378, 378, 378)
                         .addComponent(b_registrar)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(290, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

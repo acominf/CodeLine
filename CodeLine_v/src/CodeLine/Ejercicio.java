@@ -4,12 +4,19 @@ public class Ejercicio {
     
     private String ejercicio;
     private String retroalimentacion;
+    private Seccion seccion;
     
-    public void añadeEjercicio (String ejercicio) {
-        this.ejercicio = ejercicio;
+    public boolean añadirEjercicio () {
+        return true;
+    }
+    
+    public Ejercicio buscaEjercicio () {
+        return Ejercicio;
     }
     
     public String getretroalimentacion () {
         return retroalimentacion;
     }
+    
+    
 }
