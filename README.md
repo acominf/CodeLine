@@ -27,7 +27,6 @@ En la app se implementará completar código, para que el usuario desarrolle la 
 
 ### Diagrama de clases
 ![Diagrama de clases](Diagrama/CodeLine.png)
-<img src="https://github.com/acominf/CodeLine/blob/master/Diagrama/CodeLine.png" alt="Diagrama">
 
 
 ### Autor(es)
