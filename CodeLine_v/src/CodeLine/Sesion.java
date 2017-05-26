@@ -16,6 +16,9 @@ public class Sesion extends javax.swing.JFrame {
 
     public Sesion() {
         initComponents();
+        Captura v_archivo = new Captura();
+        v_archivo.setVisible(true);
+        dispose();
         setLocationRelativeTo(null);
         setResizable(false);
         setTitle("Inicia Sesión");
