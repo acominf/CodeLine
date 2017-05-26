@@ -11,7 +11,7 @@ public class Ejercicio {
     }
     
     public Ejercicio buscaEjercicio () {
-        return Ejercicio;
+        return null;
     }
     
     public String getretroalimentacion () {

@@ -1,17 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package CodeLine;
-
-/**
- *
- * @author efrai
- */
 class Seccion {
     
-    private String tipo;
+    private final String tipo;
     private int avance;
     
    public Seccion (String tp, int av) {
@@ -20,11 +10,11 @@ class Seccion {
    }
     
     public boolean anadirSeccion () {
-        
+        return false;     
     }
     
     public Seccion buscaSeccion () {
-        
+        return null; 
     }
     
     public void modificaAvance (int mod) {

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
-    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-      <Color blue="0" green="ff" red="0" type="rgb"/>
-    </Property>
     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
       <Color blue="0" green="ff" id="yellow" palette="1" red="ff" type="palette"/>
+    </Property>
+    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[800, 600]"/>
     </Property>
   </Properties>
   <SyntheticProperties>
@@ -30,42 +30,47 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="242" max="32767" attributes="0"/>
+              <EmptySpace pref="198" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="l_correo" min="-2" max="-2" attributes="0"/>
-                  <Component id="l_nombre" min="-2" max="-2" attributes="0"/>
-                  <Component id="l_usuario" alignment="1" min="-2" max="-2" attributes="0"/>
-                  <Component id="l_contrasena" alignment="1" min="-2" max="-2" attributes="0"/>
-                  <Component id="l_confirmar" alignment="1" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="t_nombre" min="-2" pref="208" max="-2" attributes="0"/>
-                  <Component id="t_correo" min="-2" pref="208" max="-2" attributes="0"/>
-                  <Component id="t_usuario" min="-2" pref="158" max="-2" attributes="0"/>
-                  <Component id="t_contrasena" min="-2" pref="158" max="-2" attributes="0"/>
-                  <Component id="t_confirmar" min="-2" pref="158" max="-2" attributes="0"/>
+                  <Component id="b_cancelar" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="l_correo" min="-2" max="-2" attributes="0"/>
+                          <Component id="l_nombre" min="-2" max="-2" attributes="0"/>
+                          <Component id="l_usuario" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="l_contrasena" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="l_confirmar" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="t_nombre" min="-2" pref="208" max="-2" attributes="0"/>
+                          <Component id="t_correo" min="-2" pref="208" max="-2" attributes="0"/>
+                          <Component id="t_usuario" min="-2" pref="158" max="-2" attributes="0"/>
+                          <Component id="t_contrasena" min="-2" pref="158" max="-2" attributes="0"/>
+                          <Component id="t_confirmar" min="-2" pref="158" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
               <EmptySpace min="-2" pref="266" max="-2" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="287" max="-2" attributes="0"/>
+                      <Component id="b_registrar" min="-2" max="-2" attributes="0"/>
+                  </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="319" max="-2" attributes="0"/>
                       <Component id="c_condiciones" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="287" max="-2" attributes="0"/>
-                      <Component id="b_cargar" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="139" max="-2" attributes="0"/>
-                      <Component id="b_borrar" min="-2" max="-2" attributes="0"/>
-                  </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="378" max="-2" attributes="0"/>
-                      <Component id="b_registrar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="250" max="-2" attributes="0"/>
+                      <Component id="b_cargarImagen" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="118" max="-2" attributes="0"/>
+                      <Component id="b_borrarImagen" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="290" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -74,8 +79,8 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="229" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="b_borrar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="b_cargar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="b_borrarImagen" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="b_cargarImagen" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -105,25 +110,31 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="c_condiciones" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="b_registrar" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="b_registrar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="b_cancelar" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace pref="49" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="b_cargar">
+    <Component class="javax.swing.JButton" name="b_cargarImagen">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Cargar"/>
+        <Property name="text" type="java.lang.String" value="Cargar Imagen"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b_cargarActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b_cargarImagenActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="b_borrar">
+    <Component class="javax.swing.JButton" name="b_borrarImagen">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Borrar"/>
+        <Property name="text" type="java.lang.String" value="Borrar Imagen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b_borrarImagenActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="l_nombre">
       <Properties>
@@ -181,6 +192,14 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b_registrarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="b_cancelar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cancelar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b_cancelarActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
