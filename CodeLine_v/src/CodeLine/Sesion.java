@@ -7,6 +7,10 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JLayeredPane;
+import javax.swing.JPanel;
 
 public class Sesion extends javax.swing.JFrame {
 
@@ -15,6 +19,15 @@ public class Sesion extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setResizable(false);
         setTitle("Inicia Sesión");
+        
+        String directorioActual = System.getProperty("user.dir");
+        String separador = System.getProperty("file.separator");
+        
+        ((JPanel)getContentPane()).setOpaque(false);
+        ImageIcon img = new ImageIcon(directorioActual+separador+"src/CodeLine/Images/Sesion.png");
+        JLabel fondo = new JLabel(img);
+        fondo.setBounds(-4,-14,img.getIconWidth(),img.getIconHeight());
+        getLayeredPane().add(fondo,JLayeredPane.FRAME_CONTENT_LAYER);
     }
     
     @SuppressWarnings("unchecked")

@@ -1,10 +1,25 @@
 package CodeLine;
+
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JLayeredPane;
+import javax.swing.JPanel;
+
 public class CodeLine extends javax.swing.JFrame {
     public CodeLine() {
         initComponents();
         setLocationRelativeTo(null);
         setResizable(false);
         setTitle("Menú");
+        
+        String directorioActual = System.getProperty("user.dir");
+        String separador = System.getProperty("file.separator");
+        
+        ((JPanel)getContentPane()).setOpaque(false);
+        ImageIcon img = new ImageIcon(directorioActual+separador+"src/CodeLine/Images/fondo.png");
+        JLabel fondo = new JLabel(img);
+        fondo.setBounds(-4,-14,img.getIconWidth(),img.getIconHeight());
+        getLayeredPane().add(fondo,JLayeredPane.FRAME_CONTENT_LAYER);
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -99,7 +114,7 @@ public class CodeLine extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 212, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 254, Short.MAX_VALUE)
                 .addComponent(jLabel5)
                 .addContainerGap())
         );

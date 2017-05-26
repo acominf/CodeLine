@@ -1,6 +1,10 @@
 package CodeLine;
 
 import java.util.Arrays;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JLayeredPane;
+import javax.swing.JPanel;
 
 public class CrearCuenta extends javax.swing.JFrame {
     public CrearCuenta() {
@@ -8,6 +12,15 @@ public class CrearCuenta extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setResizable(false);
         setTitle("Crear Cuenta");
+        
+        String directorioActual = System.getProperty("user.dir");
+        String separador = System.getProperty("file.separator");
+        
+        ((JPanel)getContentPane()).setOpaque(false);
+        ImageIcon img = new ImageIcon(directorioActual+separador+"src/CodeLine/Images/fondo.png");
+        JLabel fondo = new JLabel(img);
+        fondo.setBounds(-4,-14,img.getIconWidth(),img.getIconHeight());
+        getLayeredPane().add(fondo,JLayeredPane.FRAME_CONTENT_LAYER);
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
