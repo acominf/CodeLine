@@ -44,7 +44,6 @@ public class CrearCuenta extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setForeground(java.awt.Color.yellow);
-        setMaximumSize(new java.awt.Dimension(800, 600));
 
         b_cargarImagen.setText("Cargar Imagen");
         b_cargarImagen.addActionListener(new java.awt.event.ActionListener() {
