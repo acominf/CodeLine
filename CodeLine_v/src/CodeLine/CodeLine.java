@@ -25,45 +25,59 @@ public class CodeLine extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        l_codeline = new javax.swing.JLabel();
+        b_seccion2 = new javax.swing.JButton();
+        b_ejercicios = new javax.swing.JButton();
+        l_bienvenida = new javax.swing.JLabel();
+        b_seccion1 = new javax.swing.JButton();
+        l_vision = new javax.swing.JLabel();
+        l_mision = new javax.swing.JLabel();
+        l_autores = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(0, 255, 0));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        jLabel1.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
-        jLabel1.setText("CodeLine: Aprende a programar.");
+        l_codeline.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        l_codeline.setText("CodeLine: Aprende a programar.");
 
-        jButton3.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
-        jButton3.setText("Sección 2");
+        b_seccion2.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        b_seccion2.setText("Sección 2");
+        b_seccion2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b_seccion2ActionPerformed(evt);
+            }
+        });
 
-        jButton4.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
-        jButton4.setText("Ejercicios");
+        b_ejercicios.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        b_ejercicios.setText("Ejercicios");
+        b_ejercicios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b_ejerciciosActionPerformed(evt);
+            }
+        });
 
-        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 0, 36)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Bienvenid@");
+        l_bienvenida.setFont(new java.awt.Font("Comic Sans MS", 0, 36)); // NOI18N
+        l_bienvenida.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        l_bienvenida.setText("Bienvenid@");
 
-        jButton6.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
-        jButton6.setText("Sección 1");
+        b_seccion1.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        b_seccion1.setText("Sección 1");
+        b_seccion1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b_seccion1ActionPerformed(evt);
+            }
+        });
 
-        jLabel3.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Visión:");
+        l_vision.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        l_vision.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        l_vision.setText("Visión:");
 
-        jLabel4.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Misión:");
+        l_mision.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        l_mision.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        l_mision.setText("Misión:");
 
-        jLabel5.setFont(new java.awt.Font("Cambria", 0, 14)); // NOI18N
-        jLabel5.setText("Creado por: Rodrigo González y Efraín Morín.");
+        l_autores.setFont(new java.awt.Font("Cambria", 0, 14)); // NOI18N
+        l_autores.setText("Creado por: Rodrigo González y Efraín Morín.");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -75,52 +89,73 @@ public class CodeLine extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(138, 138, 138)
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 514, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(l_bienvenida, javax.swing.GroupLayout.PREFERRED_SIZE, 514, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(l_mision, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(l_vision, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(b_seccion1, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel1)
+                                            .addComponent(l_codeline)
                                             .addGroup(layout.createSequentialGroup()
-                                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(b_seccion2, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                                                .addComponent(b_ejercicios, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
                         .addGap(0, 16, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel5)))
+                        .addComponent(l_autores)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(l_codeline, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(2, 2, 2)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(b_ejercicios, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(b_seccion2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(b_seccion1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(42, 42, 42)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(l_bienvenida, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(l_vision, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(l_mision, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 254, Short.MAX_VALUE)
-                .addComponent(jLabel5)
+                .addComponent(l_autores)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void b_seccion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_seccion1ActionPerformed
+        // TODO add your handling code here:
+        Pantalla_Leccion seccion = new Pantalla_Leccion();
+        seccion.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_b_seccion1ActionPerformed
+
+    private void b_seccion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_seccion2ActionPerformed
+        // TODO add your handling code here:
+        Pantalla_Leccion seccion = new Pantalla_Leccion();
+        seccion.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_b_seccion2ActionPerformed
+
+    private void b_ejerciciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_ejerciciosActionPerformed
+        // TODO add your handling code here:
+        Pantalla_Leccion seccion = new Pantalla_Leccion();
+        seccion.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_b_ejerciciosActionPerformed
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -131,14 +166,14 @@ public class CodeLine extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
+    private javax.swing.JButton b_ejercicios;
+    private javax.swing.JButton b_seccion1;
+    private javax.swing.JButton b_seccion2;
+    private javax.swing.JLabel l_autores;
+    private javax.swing.JLabel l_bienvenida;
+    private javax.swing.JLabel l_codeline;
+    private javax.swing.JLabel l_mision;
+    private javax.swing.JLabel l_vision;
     // End of variables declaration//GEN-END:variables
 
 }
