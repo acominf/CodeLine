@@ -1,0 +1,29 @@
+C ofrece distintos tipos de datos, cada uno de los cuales se puede 
+encontrar representado de manera diferente. 
+Tipos:
+int - cantidad entero
+char - caracter
+float - numero decimal
+double - numero decimal con mas precision que el float
+
+Cabe señalar que todas estas palabras son reservadas por lo que 
+no podremos usarlas como identificadores.
+
+La combinacion de identificadores con tipos de datos se utlizan para 
+declarar variables, en C se necesitan declarar antes de poder usarlas,
+la sintaxis base de ello es:
+tipo_Dato nombreVariable;
+
+Es importa recordar que siempre termina con punto y coma, de lo 
+contrario al compilar nos marcara error.
+
+Ejemplos:
+int suma;
+float resultado;
+char letra;
+
+Podemos declarar dos o mas variables en la misma linea:
+int num1, num2;
+
+Asi como darles un valor inicial:
+float resultado = suma;

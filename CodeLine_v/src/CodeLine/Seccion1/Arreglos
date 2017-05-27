@@ -1,0 +1,8 @@
+Los arreglos se definen como una coleccion finita, homogenea y
+ordenada de elementos.
+Al decir finita, nos referimos a que su tamaño es fijo, es decir, 
+tiene un inicio y un fin.
+Cuando decimos homogenea hacemos referencia a que todos
+son del mismo tipo de dato.
+Y por ultimo, ordenada ya que sabemos cual sera siempre el 
+primer y ultimo elemento de nuestro arreglo.

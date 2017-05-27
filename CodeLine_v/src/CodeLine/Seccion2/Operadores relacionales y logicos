@@ -1,0 +1,23 @@
+En C exiten 4 tipos de operadores relacionales:
+< menor que
+> mayor que
+<= menor o igual que
+>= mayor o igual que
+== igual que
+!= diferente que
+
+Estos operadores funcionan para comparar dos expresiones, ya que 
+estos operadores son binarios, es decir, necesitan dos elementos 
+para funcionar.
+
+Operadores logicos:
+&& And logica
+|| Or logica
+
+Utilizadas para formar expresiones de condiciones mas compilcadas que 
+pueden ser verdaderas o falsas.
+
+Un ejemplo seria si tenemos que i = 7 y c = 'w':
+(i >= 6) && (c == 'w');
+Esta operacion nos arrojara un verdadero puesto que i es mayor a 6 
+y f es igual a 'w'.

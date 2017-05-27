@@ -1,0 +1,11 @@
+Un arbol ordenado es aquel en el cual las ramas de los nodos del 
+arbol estan ordenadas. Los arboles ordenados de grado dos son 
+de especial interes puesto que representan una de las estructuras 
+de datos mas importantes en computacion, conocidos como arboles 
+binarios. 
+En un arbol binario cada nodo puede tener como maximo dos subarboles 
+y siempre es necesario distinguir entre el subarbol izquiero y derecho. 
+Los arboles binarios tienen multiples aplicaciones. Se les puede 
+utilizar para representar una estructura en la cual es posible tomar deciones 
+con dos opciones en distintos puntos de un proceso, para representar 
+un arbol genealogico, etc.

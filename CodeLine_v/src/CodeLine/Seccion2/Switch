@@ -1,0 +1,17 @@
+La instruccion switch hace que se seleccione un grupo de instrucciones 
+entre varios grupos disponibles.
+La seleccion se basa en el valor de una expresion que se incluye 
+en la instruccion switch.
+La forma general del switch:
+
+switch (expresion) {
+    case expresion1:
+        instruccion1;
+   case expresion2:
+        instruccion2
+}
+
+La expresion es general, es decir, puede tomar cualquier valor dentro 
+de los establecidos, entonces si la expresion es igual a la expresion1
+se ejecutara la instruccion1, sino, y es igual a la expresion2 se 
+ejecutara la instruccion2.

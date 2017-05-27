@@ -1,0 +1,12 @@
+Una pila es una lista de elementos a la cual se pueden insertar o 
+eliminar elementos unicamente por uno de los extremos. Las pilas 
+son de tipo LIFO (Last-In-First-Out, ultimo en entrar primero en salir) 
+asi pues los elementos podran ser eliminados en orden inverso al 
+que se insertaron.
+Las pilas pertenecen al grupo de estructuras de datos lineales, ya 
+que los datos ocupan posiciones sucesivas.
+Esta estructura solo puede ser accesada por un extremo, el cual 
+normalmente llamamos tope de la pila.
+Ejemplos claros de este tipo de estructura puede ser cuando ponemos 
+platos uno sobre otro, los ponemos hasta arriba, siendo este el ultimo 
+en agregarse pero sera el primer que tomaremos.

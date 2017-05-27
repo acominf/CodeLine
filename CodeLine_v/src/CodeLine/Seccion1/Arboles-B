@@ -1,0 +1,6 @@
+Los arboles-B son una generalizacion de los arboles balanceados. 
+Estos representan basicamente un metodo de busqueda externa 
+utilizando arboles multicaminos. En general cada nodo en un arbol 
+de orden d contiene 2d calves como maximo y d claves como minimo. 
+Con esto se garantiza que cada pagina este llena como minimo hasta 
+la mitad.

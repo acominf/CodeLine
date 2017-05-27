@@ -1,0 +1,12 @@
+Los arreglos que hemos visto se pueden denominar 
+unidimensionales, ya que solo representan una dimension de 
+informacion.
+Los que a continuacion veremos, pueden tener dos o mas 
+diimensiones, cada representando los interes para la cual sera 
+usada.
+Los arreglos bidimensionales, arreglos que son los mas utilizados
+en la programacion real, consisten en dos arreglos del mismo tipo
+unidimensionales ordenados como un solo arreglo, es decir, 
+tenemos dos arreglos del mismo tamaño, tipos de elementos que 
+se unen para formar un solo arreglo y tener la informacion mas 
+ordenada y poder acceder a ella de una manera mas facil.

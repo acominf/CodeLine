@@ -1,0 +1,13 @@
+C tiene cuatro tipos de constantes: enteras, coma flotante, caracter y 
+cadena de caracteres.
+Se usan para definir una variable la cual nunca cambiara su valor 
+a lo largo de la ejecucion del programa.
+Son muy utilizadas para hacer calcular matematicos donde no queremos 
+declara una variable si nunca cambiara de valor.
+La sintaxis de la definicion de constantes se tiene que hacer antes de todo:
+se utiliza la palabra reservada define:
+#define nombreConstante valor
+
+Ejemplos:
+#define ANCHO 300
+#define PI 3.1416

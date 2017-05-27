@@ -1,0 +1,11 @@
+Los datos sobre los que actuan los operadores se llaman operandos. 
+Existen 5 operadores aritmeticos en C: +, -, *, /, %.
+El primer es sumar, restar, multiplicar, dividir, y por ultimo el resto de 
+division entera.
+Estos sirven para realizar operaciones matematicas.
+Un ejemplo de un programa basico en C:
+int a = 3, b = 7;
+int suma;
+suma = a + b;
+En este pequeño ejemplo, en donde sumamos dos numeros enteros,  
+le asiganmos el resultado en la variabel suma, asi pues suma vale 10.

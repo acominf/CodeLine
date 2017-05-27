@@ -1,0 +1,15 @@
+Una lista es una coleccion de elementos llamados generalmente 
+nodos. El orden entre los nodos se establece por medio de punteros, 
+es decir, direcciones o referencias a otros nodos.
+A grandes rasgos, podemos decir que un nodo consta de dos partes: 
+Un campo de informacion que sera del tipo de datos que se quiera 
+almacenar en la lista; y un puntero que se establece para hacer referencia 
+al siguiente nodo de la lista, o sea, unir ambos nodos, ya sea por uno 
+o dos lados del nodo.
+Existen diferentes tipos de listas, cada una con sus pros y contras: las 
+primeras son listas simples, que consisten en estar enlazados por 
+un solo lado o sentido; listas doblemente enlazadas, es decir estan 
+conectadas por ambos lados del nodo, cada nodo sabe quien esta 
+delante suyo y detras de el; y por ultimos, listas circulares, que 
+su nombre lo indica, estan unidas formando un circulo, es decir, 
+el ultimos esta conectado con el primero.
