@@ -1,0 +1,23 @@
+1. Declara e inicializa una variable entera " i " en 0
+2. Incluye un ciclo for para imprimir 10 veces la variable "i"
+ Nota: Cada vez que se imprima la variable debera de
+aumentarle un "1" cada vez que el ciclo no termine la condición.
+
+#include <stdio.h>
+
+int main()
+{
+       int i = 0;
+
+      for( i = 0 ; i < 10 ; i ++ )
+      {
+              printf ( " La variable contiene: ", i + 1);
+      }      	
+       
+       return 0;
+}
+           ¿Cual seran los valores que imprime el ciclo?
+             
+                 Imprime 0 1 2 3 4 5 6 7 8 9
+                 Imprime 1 2 3 4 5 6 7 8 9 10
+                 Imprime 0 1 2 3 4 5 6 7 8 9 10

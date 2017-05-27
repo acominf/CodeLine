@@ -1,0 +1,15 @@
+1. Incluye a la libreria stdio.h
+2. Declara una constante que lleve por nombre "PI" 
+y este inicializada en 3.1416.
+3. Imprime la variable PI
+
+#include <stdio.h>
+
+#define PI 3.1416
+
+int main()
+{
+       printf ( " La constante PI inicializada en: ", PI );
+       
+       return 0;
+}

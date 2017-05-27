@@ -1,0 +1,15 @@
+Escribe dentro de la función principal un comentario de linea y a continuación
+un comentario de dos lineas que contengan:
+ " Esto es un comentario de linea "  y
+"  Esto es un comentario de varias lineas " respectivamente.
+
+#include <stdio.h>
+
+int main()
+{
+       // Esto es un comentario de linea.
+       /* Esto es un comentario de 
+       varias lineas */
+       
+       return 0;
+}

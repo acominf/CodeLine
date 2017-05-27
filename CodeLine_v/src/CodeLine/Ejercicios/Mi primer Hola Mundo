@@ -1,0 +1,11 @@
+Bievenido a "Mi Primer Hola Mundo"
+¡Es hora de programar!, para empezar
+imprime en pantalla la oracion entrecomillada.
+
+#include <stdio.h>
+
+int main()
+{
+       printf ( "Mi Primer Hola Mundo" );
+       return 0;
+}

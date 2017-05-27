@@ -1,0 +1,17 @@
+Escribe dentro de la función principal las declaraciones necesarias:
+variable con nombre: numero, caracter, doble, flotante.
+De tipo: entero, caracter, doble y flotante respectivamente.
+Todas las variables inicializadas con valor cero.
+Ejemplo: int numero = 0;
+
+#include <stdio.h>
+
+int main()
+{
+       int numero = 0;
+       char caracter = 0;
+       double doble = 0;
+       float flotante = 0;
+       
+       return 0;
+}

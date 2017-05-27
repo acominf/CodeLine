@@ -1,0 +1,26 @@
+Completa el siguiente codigo y contesta las preguntas:
+
+#include <stdio.h>
+
+int main()
+{
+       int numero = 0;
+       printf ( "Ingresa un dato entero: " );
+       scanf(" %d ", &numero); 
+
+       char letra = 'c';
+       printf ( "Ingresa una letra: " );
+       scanf(" %s ", &letra); 
+   
+       float flotante = 3.1416;
+       printf ( "Ingresa un dato flotante: " );
+       scanf(" %f ", &flotante); 
+
+       return 0;
+}
+    ¿Cual sera el resultado de imprimir cada
+       variable en orden de declaracion?
+    
+        Datos del usuario.
+        Datos inicializados ( 0 , c , 3.1416).
+        Ningun dato seria impreso correctamente.
