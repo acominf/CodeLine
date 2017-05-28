@@ -71,4 +71,32 @@ public class Archivo {
             }
             return texto;
         }
+        
+         public String LeeArchivoSeccion(String nombArch, String seccion)
+        { 
+            String directorioActual = System.getProperty("user.dir");
+            String separador = System.getProperty("file.separator");
+            String texto = "";
+            try {
+                if(existeArchivo(nombArch, seccion)){
+                    FileReader archivo = new FileReader(directorioActual+separador+"src/CodeLine/"+ seccion + "/" + nombArch);
+                    BufferedReader b = new BufferedReader(archivo);
+                    String cadena;
+                    while((cadena = b.readLine()) != null) {
+                        texto += cadena;
+                    }
+                    b.close();
+                    return texto;
+                }
+            } catch (FileNotFoundException e) {
+                System.out.println("Archivo no encontrado");
+                //e.printStackTrace();
+            }
+            catch (IOException e) {
+                System.out.println("Entrada/Salida de datos");
+                //e.printStackTrace();
+            }
+            return texto;
+        }
+
 }
