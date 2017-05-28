@@ -14,12 +14,7 @@ public class Account
 	private String email;
 	private String password;
         private int puntaje;
-	ArrayList<Object> arrayAccounts = new ArrayList<>();
 	
-	public ArrayList<Object> getArrayAccounts()
-	{
-		return arrayAccounts;
-	}
 	public void addAccount(String nomb,String User, String Email, String Password)
 	{
                 setNombre(nomb);
@@ -82,7 +77,6 @@ public class Account
                 }
             } catch (IOException e) {
                 System.out.println("Entrada/Salida de datos");
-                //e.printStackTrace();
             } finally {
               if (archivo != null)
               {
@@ -90,7 +84,6 @@ public class Account
                     archivo.close();
                 } catch (IOException e) {
                     System.out.println("Entrada/Salida de datos");
-                    //e.printStackTrace();
                 }
               }
             }

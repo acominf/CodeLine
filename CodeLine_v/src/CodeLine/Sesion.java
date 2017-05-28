@@ -16,9 +16,6 @@ public class Sesion extends javax.swing.JFrame {
 
     public Sesion() {
         initComponents();
-        Captura v_archivo = new Captura();
-        v_archivo.setVisible(true);
-        dispose();
         setLocationRelativeTo(null);
         setResizable(false);
         setTitle("Inicia Sesión");
@@ -40,12 +37,12 @@ public class Sesion extends javax.swing.JFrame {
         jComboBox1 = new javax.swing.JComboBox<>();
         t_contrasena = new javax.swing.JPasswordField();
         b_iniciar = new javax.swing.JButton();
-        p_cargando = new javax.swing.JProgressBar();
         l_contrasena = new javax.swing.JLabel();
         b_crearcuenta = new javax.swing.JButton();
         t_usuario = new javax.swing.JTextField();
         l_usuario = new javax.swing.JLabel();
         i_iconsesion = new javax.swing.JLabel();
+        b_captura = new javax.swing.JButton();
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
@@ -86,11 +83,16 @@ public class Sesion extends javax.swing.JFrame {
         i_iconsesion.setText("imagen_sesion");
         i_iconsesion.setPreferredSize(new java.awt.Dimension(200, 200));
 
+        b_captura.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b_capturaActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(p_cargando, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -111,12 +113,18 @@ public class Sesion extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(250, 250, 250)
                 .addComponent(i_iconsesion, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(309, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(b_captura, javax.swing.GroupLayout.PREFERRED_SIZE, 8, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(32, 32, 32)
+                .addGap(17, 17, 17)
+                .addComponent(b_captura)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(i_iconsesion, javax.swing.GroupLayout.DEFAULT_SIZE, 271, Short.MAX_VALUE)
                 .addGap(46, 46, 46)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -130,8 +138,7 @@ public class Sesion extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(b_iniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(b_crearcuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(111, 111, 111)
-                .addComponent(p_cargando, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(125, 125, 125))
         );
 
         pack();
@@ -143,10 +150,11 @@ public class Sesion extends javax.swing.JFrame {
 
     private void b_iniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_iniciarActionPerformed
         // TODO add your handling code here: 
+        Archivo archivo = new Archivo();
         Account user = new Account();
         CheckString check1 = new CheckString();
         
-        user = GeneraDatos(LeeArchivo(t_usuario.getText()));
+        user = GeneraDatos(archivo.LeeArchivo(t_usuario.getText(), "BaseDeDatos"));
         
         if((user.getPassword()).equals(check1.convertToString(t_contrasena.getPassword())) 
                 && (user.getUserID()).equals(t_usuario.getText()))
@@ -172,6 +180,13 @@ public class Sesion extends javax.swing.JFrame {
     private void t_usuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t_usuarioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_t_usuarioActionPerformed
+
+    private void b_capturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_capturaActionPerformed
+        // TODO add your handling code here:
+        Captura v_archivo = new Captura();
+        v_archivo.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_b_capturaActionPerformed
     
     
     public Account GeneraDatos(String cadena)
@@ -213,44 +228,6 @@ public class Sesion extends javax.swing.JFrame {
         user.setPuntaje(puntaje);
         return user;
     }
-    public String LeeArchivo(String nombArch)
-        { 
-            String directorioActual = System.getProperty("user.dir");
-            String separador = System.getProperty("file.separator");
-            String texto = "";
-            try {
-                if(existeArchivo(nombArch)){
-                    FileReader archivo = new FileReader(directorioActual+separador+"src/CodeLine/BaseDeDatos/"+nombArch);
-                    BufferedReader b = new BufferedReader(archivo);
-                    String cadena;
-                    while((cadena = b.readLine()) != null) {
-                        texto += cadena;
-                    }
-                    b.close();
-                    return texto;
-                }
-            } catch (FileNotFoundException e) {
-                System.out.println("Archivo no encontrado");
-                //e.printStackTrace();
-            }
-            catch (IOException e) {
-                System.out.println("Entrada/Salida de datos");
-                //e.printStackTrace();
-            }
-            return texto;
-        }
-    
-        
-        public boolean existeArchivo(String nombArch)
-        {
-            String directorioActual = System.getProperty("user.dir");
-            String separador = System.getProperty("file.separator");            
-            File archivo = new File(directorioActual+separador+"src/CodeLine/BaseDeDatos/"+nombArch);
-            if(archivo.exists())
-                return true;
-            else
-                return false;
-        }
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -261,13 +238,13 @@ public class Sesion extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton b_captura;
     private javax.swing.JButton b_crearcuenta;
     private javax.swing.JButton b_iniciar;
     private javax.swing.JLabel i_iconsesion;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel l_contrasena;
     private javax.swing.JLabel l_usuario;
-    private javax.swing.JProgressBar p_cargando;
     private javax.swing.JPasswordField t_contrasena;
     private javax.swing.JTextField t_usuario;
     // End of variables declaration//GEN-END:variables
