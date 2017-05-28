@@ -1,13 +1,13 @@
 La instruccion if-else se utiliza para realizar un comprobacion logica 
 y a continuacion llevar a cabo una de dos posibles acciones, dependiendo 
-del resultado de la comprobacion.
-La parte else de la instruccion es opcional:
+del resultado de la comprobacion. 
+La parte else de la instruccion es opcional: 
 
-if (expresion) {
-    instruccion1
-} else {
-   instruccion2
-}
-
+if (expresion) { 
+    instruccion1 
+} else { 
+   instruccion2 
+} 
+ 
 La instruccion1 se ejecutara si la expresion es verdadera, sino la 
 instruccion2 se ejecutara.

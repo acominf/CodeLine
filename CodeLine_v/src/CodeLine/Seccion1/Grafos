@@ -1,16 +1,16 @@
-En un grafo se distinguen basicamente dos elementos: los nodos, 
+En un grafo se distinguen basicamente dos elementos: los nodos,  
 mejor conocidos como vertices, y los arcos, llamados aristas, que 
 conectan un vertice con otro. Los vertices almacenan informacion y las 
-aristas representan relaciones entre dicha informacion.
-Caracteristicas de los grafos:
-1.- El grado de un nodo es el numero de aristas que contiene.
-2.- Lazo o bucle: es una arista que conecta a un nodo consigo mismo.
+aristas representan relaciones entre dicha informacion. 
+Caracteristicas de los grafos: 
+1.- El grado de un nodo es el numero de aristas que contiene. 
+2.- Lazo o bucle: es una arista que conecta a un nodo consigo mismo. 
 3.- Camino: se define como la secuencia de n vertices que se debe seguir 
-para llegar del nodo origen al nodo destino.
+para llegar del nodo origen al nodo destino. 
 4.- Camino cerrado: el camino P es cerrado si el primer y ultimo nodo 
-son iguales.
+son iguales. 
 5.- Camino simple: si todos sus nodos son distintos, con excepcion 
-del primer y ultimo que pueden ser iguales.
-6.- Ciclo: es un camino simple cerrado de longitud 3 o mayor.
+del primer y ultimo que pueden ser iguales. 
+6.- Ciclo: es un camino simple cerrado de longitud 3 o mayor. 
 7.- Multigrafo: se denomina multigrafo si al menos dos de sus 
 vertices estan conectados por dos aristas.

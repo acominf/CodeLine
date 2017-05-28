@@ -1,22 +1,22 @@
 Hasta ahora hemos visto estructuras de datos lineales, pero ahora toca 
-el turno de estructuras de datos no-lineales.
+el turno de estructuras de datos no-lineales. 
 Los arboles representan las estructuras no-lineales y dinamicas 
 de datos mas importantes en computacion. Al decir dinamicas hacemos 
 referencia a que la estructura del arbol puede cambiar durante la 
 ejecucion del programa, cambiando su tamaño. 
 Una definicion general de un arbol es una estructura jerarquica 
 aplicada sobre una coleccion de elementos u objetos llamados nodos, 
-uno de los cuales es llamado raiz.
-Caracteristicas fundamentales de los arboles:
-1.- Todo arbol que no es vacio, tiene un unico nodo raiz.
+uno de los cuales es llamado raiz. 
+Caracteristicas fundamentales de los arboles: 
+1.- Todo arbol que no es vacio, tiene un unico nodo raiz. 
 2.- Un nodo X es descendiente directo de un nodo Y, si el nodo X 
-es apuntado por el nodo Y. Se dice que X es hijo de Y.
+es apuntado por el nodo Y. Se dice que X es hijo de Y. 
 3.- Se dice que todos los nodos que son descendientes directos (hijos) 
-de un mismo nodo (padre), son hermanos.
+de un mismo nodo (padre), son hermanos. 
 4.- Todo nodo que no tiene ramificaciones (hijos), se conoce como 
-terminal u hoja.
+terminal u hoja. 
 5.- Todo nodo que no es raiz, ni terminal u hoja, se conoce como 
-nodo interior.
-6.- Grado es el numero de descendientes directos de un determinado nodo.
+nodo interior. 
+6.- Grado es el numero de descendientes directos de un determinado nodo. 
 7.- Grado de un arbol es el maximo grado de todos los nodos del 
 arbol.

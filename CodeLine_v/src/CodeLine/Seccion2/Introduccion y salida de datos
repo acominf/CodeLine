@@ -1,17 +1,17 @@
 Se pueden introducir datos en las computadoras procedentes del 
 dispositivo de entrada mediante la funcion de la biblioteca de C 
-scanf.
-En terminos generales se escribe asi:
-scanf(cadena de control, arg1, arg2, arg3...);
+scanf. 
+En terminos generales se escribe asi: 
+scanf(cadena de control, arg1, arg2, arg3...); 
 donde la cadena de control hace referencia a una cadena de caracteres 
-que contiene cierta informacion sobre el formato de los datos:
-scanf("%s %d %f", concepto, &num_partida, &coste);
+que contiene cierta informacion sobre el formato de los datos: 
+scanf("%s %d %f", concepto, &num_partida, &coste); 
 
 Como vimos se pueden introducir datos a nuestro programa, tambien 
 podemos visualizar en consola o en donde nuestro programa mande los 
-datos de salida, para ellos usamos la funcion printf.
+datos de salida, para ellos usamos la funcion printf. 
 En esencia funciona parecido a la anterior vista, su sintaxis en 
-muy similar:
-printf(cadena de control, arg1, arg2, arg3...);
-Ejemplos de ello:
+muy similar: 
+printf(cadena de control, arg1, arg2, arg3...); 
+Ejemplos de ello: 
 printf("%s %d %f", concepto, num_partida, coste);

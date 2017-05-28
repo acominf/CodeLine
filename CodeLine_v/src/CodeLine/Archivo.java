@@ -41,10 +41,7 @@ public class Archivo {
             String directorioActual = System.getProperty("user.dir");
             String separador = System.getProperty("file.separator");            
             File archivo = new File(directorioActual+separador+"src/CodeLine/" + seccion + "/"+nombArch);
-            if(archivo.exists())
-                return true;
-            else
-                return false;
+            return archivo.exists();
         }
         
         public String LeeArchivo(String nombArch, String seccion)

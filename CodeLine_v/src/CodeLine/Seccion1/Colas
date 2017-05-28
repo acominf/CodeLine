@@ -1,6 +1,6 @@
 Una cola es una lista de elementos en la que estos se introducen 
 por un extremo y se eliminan por otro. Las colas son de tipo FIFO 
 (First-In-First-Out, primero en entrar primero en salir), es decir, los 
-elementos se eliminan en el mismo orden en el que fueron introducidos.
+elementos se eliminan en el mismo orden en el que fueron introducidos. 
 Ejemplos en la vida cotidiano hay muchos, ejemplo de ello es una fila esperando 
-un telefono publico, la fila para comprar algo
+un telefono publico, la fila para comprar algo.

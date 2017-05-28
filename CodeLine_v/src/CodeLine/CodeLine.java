@@ -232,12 +232,18 @@ public class CodeLine extends javax.swing.JFrame {
 
     private void b_seccion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_seccion1ActionPerformed
         // TODO add your handling code here:
-        seleccionado();
+        //seleccionado();
+        Pantalla_Leccion pant = new Pantalla_Leccion();
+        pant.setVisible(true);
+        dispose();
     }//GEN-LAST:event_b_seccion1ActionPerformed
 
     private void b_seccion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_seccion2ActionPerformed
         // TODO add your handling code here:
-        seleccionado();
+        //seleccionado();
+        PantallaC pant = new PantallaC();
+        pant.setVisible(true);
+        dispose();
     }//GEN-LAST:event_b_seccion2ActionPerformed
 
     private void b_ejerciciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_ejerciciosActionPerformed
@@ -278,6 +284,7 @@ public class CodeLine extends javax.swing.JFrame {
             dispose();
         }
     }
+    
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

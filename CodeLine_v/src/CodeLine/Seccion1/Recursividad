@@ -1,11 +1,11 @@
 La recursion es un concepto amplio, dificil de precisar. 
 La recursion permite definir un problema, estructura de datos, etc, en 
-terminos de si mismo.
+terminos de si mismo. 
 Un subprograma que se llama asi mismo se dice que es recursivo. 
-La recursion puede darse de dos maneras: Directa e Indirecta.
-Directa: el subprograma se llama asi mismo de manera directa.
+La recursion puede darse de dos maneras: Directa e Indirecta. 
+Directa: el subprograma se llama asi mismo de manera directa. 
 Indirecta: el subprograma llama a otro subprograma, y este a su vez 
-llama al primero.
+llama al primero. 
 En toda definicion recursiva se debe establecer un estado base, es decir, 
 un estado en el cual la solucion no se presente de manera recursiva 
 sino directamente. Ademas, la entrada de datos del problema debe 

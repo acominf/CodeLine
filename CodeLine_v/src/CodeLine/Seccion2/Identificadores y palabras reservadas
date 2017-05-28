@@ -1,23 +1,23 @@
 Los identificadores son nombres que se les da a varios elementos 
 de un programa, como variables, funciones. Un identificador esta 
 formado por letras y digitos. Se pueden usar mayusculas y minusculas, 
-aunque se acostumbra a que la primer letra sea minuscula.
-Ejemplos de identificadores validos:
-1.- suma
-2.- _temperatura
-3.- x2
+aunque se acostumbra a que la primer letra sea minuscula. 
+Ejemplos de identificadores validos: 
+1.- suma 
+2.- _temperatura 
+3.- x2 
 
-Ejemplos de identificadores no validos:
-1.- 4num
-2.- orden-no
-3.- identificador error
+Ejemplos de identificadores no validos: 
+1.- 4num 
+2.- orden-no 
+3.- identificador error 
 
 Las palabras reservadas son palabras que no se pueden usar como 
 identificadores de variables o funciones, ya que su uso es debido para 
-cuestiones internas del programa, ejemplos de ellas son:
-1.- auto
-2.- break
-3.- int
-4.- for
-5.- if
+cuestiones internas del programa, ejemplos de ellas son: 
+1.- auto 
+2.- break 
+3.- int 
+4.- for 
+5.- if 
 6.- static

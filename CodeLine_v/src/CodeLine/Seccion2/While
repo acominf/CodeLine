@@ -1,13 +1,13 @@
 La instruccion while se utiliza para generar ciclos, en los cuales un grupo 
 de instrucciones se ejecuta de forma repetida, hasta que se satisface 
-alguna condicion.
-La forma general del while es:
+alguna condicion. 
+La forma general del while es: 
 
-while (expresion) {
-    instruccion
-}
+while (expresion) { 
+    instruccion 
+} 
 
 La instruccion se ejecutara mientras la expresion sea verdadera, la ejecutara 
-hasta que la expresion de como resultado algo negativo.
+hasta que la expresion de como resultado algo negativo. 
 Despues de eso saltara a la siguiente linea de cogido, continuando 
 con la ejecucion del programa.

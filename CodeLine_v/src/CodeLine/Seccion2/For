@@ -1,11 +1,11 @@
-La instruccion for es una de las mas usadas para generar ciclos.
+La instruccion for es una de las mas usadas para generar ciclos. 
 Esta instruccion incluye una expresion que especifica el valor inicial 
 de un indice, otra expresion que determina si debe de continuar o 
 parar el proceso y una tercera expresion que indica como de cambiar 
-el indice:
-for (expresion1; expresion2; expresion3) {
-    instruccion
-}
+el indice: 
+for (expresion1; expresion2; expresion3) { 
+    instruccion 
+} 
 
 La instruccion se ejecutara cuando la expresion1 aun no alcance los 
 parametros que indica la expresion2, y el indice cambiara su valor de 
