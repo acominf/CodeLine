@@ -195,81 +195,111 @@ public class PantallaC extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        Lecciones2 lecc = new Lecciones2();
+        /*Lecciones2 lecc = new Lecciones2();
         lecc.setVisible(true);
         lecc.leeLeccion("Identificadores y palabras reservadas", "Seccion2");
+        dispose();*/
+        Identi iden = new Identi();
+        iden.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        Lecciones2 lecc = new Lecciones2();
+        /*Lecciones2 lecc = new Lecciones2();
         lecc.setVisible(true);
         lecc.leeLeccion("Tipos de datos", "Seccion2");
+        dispose();*/
+        TiposDatos tipo = new TiposDatos();
+        tipo.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        Lecciones2 lecc = new Lecciones2();
+        /*Lecciones2 lecc = new Lecciones2();
         lecc.setVisible(true);
         lecc.leeLeccion("Operadores y Expresiones", "Seccion2");
+        dispose();*/
+        OpExpresion expe = new OpExpresion();
+        expe.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-        Lecciones2 lecc = new Lecciones2();
+        /*Lecciones2 lecc = new Lecciones2();
         lecc.setVisible(true);
         lecc.leeLeccion("Operadores relacionales y logicos", "Seccion2");
+        dispose();*/
+        OpRelacional oper = new OpRelacional();
+        oper.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        Lecciones2 lecc = new Lecciones2();
+        /*Lecciones2 lecc = new Lecciones2();
         lecc.setVisible(true);
         lecc.leeLeccion("Introduccion y salida de datos", "Seccion2");
+        dispose();*/
+        InOut in = new InOut();
+        in.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-        Lecciones2 lecc = new Lecciones2();
+        /*Lecciones2 lecc = new Lecciones2();
         lecc.setVisible(true);
         lecc.leeLeccion("Constantes", "Seccion2");
+        dispose();*/
+        Const cons = new Const();
+        cons.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
-        Lecciones2 lecc = new Lecciones2();
+        /*Lecciones2 lecc = new Lecciones2();
         lecc.setVisible(true);
         lecc.leeLeccion("Instruccion if-else", "Seccion2");
+        dispose();*/
+        CondicionalIf ielse = new CondicionalIf();
+        ielse.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
-        Lecciones2 lecc = new Lecciones2();
+        /*Lecciones2 lecc = new Lecciones2();
         lecc.setVisible(true);
         lecc.leeLeccion("For", "Seccion2");
+        dispose();*/
+        Fores ciclo = new Fores();
+        ciclo.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
-        Lecciones2 lecc = new Lecciones2();
+        /*Lecciones2 lecc = new Lecciones2();
         lecc.setVisible(true);
         lecc.leeLeccion("While", "Seccion2");
+        dispose();*/
+        Whiles cic = new Whiles();
+        cic.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
-        Lecciones2 lecc = new Lecciones2();
+        /*Lecciones2 lecc = new Lecciones2();
         lecc.setVisible(true);
         lecc.leeLeccion("Switch", "Seccion2");
+        dispose();*/
+        Switches sw = new Switches();
+        sw.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton10ActionPerformed
 

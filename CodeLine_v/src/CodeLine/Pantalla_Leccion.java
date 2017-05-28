@@ -185,92 +185,113 @@ public class Pantalla_Leccion extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        Lecciones lecc = new Lecciones();
+        /*Lecciones lecc = new Lecciones();
         lecc.setVisible(true);
         lecc.leeLeccion("Arreglos", "Seccion1");
+        dispose();*/
+        Arreglos arre = new Arreglos();
+        arre.setVisible(true);
         dispose();
-
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        Lecciones lecc = new Lecciones();
+        /*ecciones lecc = new Lecciones();
         lecc.setVisible(true);
         lecc.leeLeccion("Arreglos multidimensionales", "Seccion1");
+        dispose();*/
+        Arreglos_Multi mul = new Arreglos_Multi();
+        mul.setVisible(true);
         dispose();
 
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        Lecciones lecc = new Lecciones();
+        /*Lecciones lecc = new Lecciones();
         lecc.setVisible(true);
         lecc.leeLeccion("Pilas", "Seccion1");
+        dispose();*/
+        Pilas pila = new Pilas();
+        pila.setVisible(true);
         dispose();
-
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-        Lecciones lecc = new Lecciones();
+        /*Lecciones lecc = new Lecciones();
         lecc.setVisible(true);
         lecc.leeLeccion("Colas", "Seccion1");
+        dispose();*/
+        Colas col = new Colas();
+        col.setVisible(true);
         dispose();
-
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        Lecciones lecc = new Lecciones();
+        /*Lecciones lecc = new Lecciones();
         lecc.setVisible(true);
         lecc.leeLeccion("Recursividad", "Seccion1");
+        dispose();*/
+        Recursividad recu = new Recursividad();
+        recu.setVisible(true);
         dispose();
-
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-        Lecciones lecc = new Lecciones();
+        /*Lecciones lecc = new Lecciones();
         lecc.setVisible(true);
         lecc.leeLeccion("Arboles", "Seccion1");
+        dispose();*/
+        Arboles arbol = new Arboles();
+        arbol.setVisible(true);
         dispose();
-
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
-        Lecciones lecc = new Lecciones();
+        /*Lecciones lecc = new Lecciones();
         lecc.setVisible(true);
         lecc.leeLeccion("Arboles Binarios", "Seccion1");
+        dispose();*/
+        Arbol_Bin bina = new Arbol_Bin();
+        bina.setVisible(true);
         dispose();
-
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
-        Lecciones lecc = new Lecciones();
+        /*Lecciones lecc = new Lecciones();
         lecc.setVisible(true);
         lecc.leeLeccion("Arboles-B", "Seccion1");
+        dispose();*/
+        Arbol_B arbol = new Arbol_B();
+        arbol.setVisible(true);
         dispose();
-
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
-        Lecciones lecc = new Lecciones();
+        /*Lecciones lecc = new Lecciones();
         lecc.setVisible(true);
         lecc.leeLeccion("Listas", "Seccion1");
+        dispose();*/
+        Listas list = new Listas();
+        list.setVisible(true);
         dispose();
-
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
-        Lecciones lecc = new Lecciones();
+        /*Lecciones lecc = new Lecciones();
         lecc.setVisible(true);
         lecc.leeLeccion("Grafos", "Seccion1");
+        dispose();*/
+        Grafos graf = new Grafos();
+        graf.setVisible(true);
         dispose();
-
     }//GEN-LAST:event_jButton10ActionPerformed
 
     public static void main(String args[]) {
