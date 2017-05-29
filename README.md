@@ -26,7 +26,7 @@ En la app se implementará completar código, para que el usuario desarrolle la 
 * Tiene el ejercicio que en cada lección tendra
 
 ### Diagrama de clases
-![Diagrama de clases](Diagrama/CodeLine.png)
+![Diagrama de clases](Diagrama/Diagrama CodeLine.png)
 
 ### Capturas de pantalla de la aplicación
 - Inicio de la aplicación
