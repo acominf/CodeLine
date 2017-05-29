@@ -3,9 +3,13 @@ package CodeLine;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
+import javax.swing.JOptionPane;
+import static javax.swing.JOptionPane.INFORMATION_MESSAGE;
 import javax.swing.JPanel;
 
 public class Comentario extends javax.swing.JFrame {
+    
+    boolean verifica = false;
     
     public Comentario() {
         initComponents();
@@ -15,7 +19,6 @@ public class Comentario extends javax.swing.JFrame {
         b_regresa.setVisible(false);
         String directorioActual = System.getProperty("user.dir");
         String separador = System.getProperty("file.separator");
-        
         ((JPanel)getContentPane()).setOpaque(false);
         ImageIcon img = new ImageIcon(directorioActual+separador+"src/CodeLine/Images/comentario.png");
         JLabel fondo = new JLabel(img);
@@ -226,20 +229,32 @@ public class Comentario extends javax.swing.JFrame {
     private void b_compruebaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_compruebaActionPerformed
         // TODO add your handling code here:
         CheckString c = new CheckString();
+        String s1 = "Mal";
+        String s2 = "Mal";
         if(c.StringToString(t_valida1.getText(), "//") && c.StringToString(t_valida2.getText(), "/*"))
         {
             b_regresa.setVisible(true);
+            
         }
         else
         {
             if(!(c.StringToString(t_valida1.getText(), "//")))
                 t_valida1.setText("");
+            else
+                s1 = "Bien";
+                
             if(!(c.StringToString(t_valida2.getText(), "/*")))
                 t_valida2.setText("");
-                
+            else
+                s2 = "Bien";
+            mensaje(s1+"\n"+s2);
         }
     }//GEN-LAST:event_b_compruebaActionPerformed
 
+    public void mensaje(String msj)
+    {
+        JOptionPane.showMessageDialog(null,msj);
+    }
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

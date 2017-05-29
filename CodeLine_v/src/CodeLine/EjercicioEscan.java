@@ -3,6 +3,7 @@ package CodeLine;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 public class EjercicioEscan extends javax.swing.JFrame {
@@ -250,6 +251,8 @@ public class EjercicioEscan extends javax.swing.JFrame {
         rb_op2.setSelected(false);
         rb_op3.setSelected(false);
         b_regresa.setVisible(true);
+        
+        JOptionPane.showMessageDialog(null,"Respuesta Correcta");
     }//GEN-LAST:event_rb_op1ActionPerformed
 
     private void rb_op2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb_op2ActionPerformed
@@ -257,6 +260,7 @@ public class EjercicioEscan extends javax.swing.JFrame {
         rb_op1.setSelected(false);
         rb_op2.setSelected(true);
         rb_op3.setSelected(false);
+        JOptionPane.showMessageDialog(null,"Respuesta Incorrecta");
     }//GEN-LAST:event_rb_op2ActionPerformed
 
     private void rb_op3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb_op3ActionPerformed
@@ -264,6 +268,7 @@ public class EjercicioEscan extends javax.swing.JFrame {
         rb_op1.setSelected(false);
         rb_op2.setSelected(false);
         rb_op3.setSelected(true);
+        JOptionPane.showMessageDialog(null,"Respuesta Incorrecta");
     }//GEN-LAST:event_rb_op3ActionPerformed
 
     public static void main(String args[]) {

@@ -7,12 +7,26 @@ import javax.swing.JPanel;
 
 public class Ejercicio extends javax.swing.JFrame {
 
+    private static boolean var1 = false;
+    private static boolean var2 = false;
+    private static boolean var3 = false;
+    private static boolean var4 = false;
+    private static boolean var5 = false;
+    private static boolean var6 = false;
+    private static boolean var7 = false;
+    
     public Ejercicio() {
         initComponents();
         setLocationRelativeTo(null);
         setResizable(false);
         setTitle("Ejercicio");
-        
+        m1.setVisible(var1);
+        m2.setVisible(var2);
+        m3.setVisible(var3);
+        m4.setVisible(var4);
+        m5.setVisible(var5);
+        m6.setVisible(var6);
+        m7.setVisible(var7);
         String directorioActual = System.getProperty("user.dir");
         String separador = System.getProperty("file.separator");
         
@@ -35,6 +49,13 @@ public class Ejercicio extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
+        m1 = new javax.swing.JLabel();
+        m2 = new javax.swing.JLabel();
+        m3 = new javax.swing.JLabel();
+        m4 = new javax.swing.JLabel();
+        m5 = new javax.swing.JLabel();
+        m6 = new javax.swing.JLabel();
+        m7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -95,6 +116,27 @@ public class Ejercicio extends javax.swing.JFrame {
             }
         });
 
+        m1.setForeground(new java.awt.Color(255, 255, 255));
+        m1.setText("Completo");
+
+        m2.setForeground(new java.awt.Color(255, 255, 255));
+        m2.setText("Completo");
+
+        m3.setForeground(new java.awt.Color(255, 255, 255));
+        m3.setText("Completo");
+
+        m4.setForeground(new java.awt.Color(255, 255, 255));
+        m4.setText("Completo");
+
+        m5.setForeground(new java.awt.Color(255, 255, 255));
+        m5.setText("Completo");
+
+        m6.setForeground(new java.awt.Color(255, 255, 255));
+        m6.setText("Completo");
+
+        m7.setForeground(new java.awt.Color(255, 255, 255));
+        m7.setText("Completo");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -106,35 +148,67 @@ public class Ejercicio extends javax.swing.JFrame {
                     .addComponent(jButton6)
                     .addComponent(jButton1)
                     .addComponent(jButton2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 171, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton7)
-                    .addComponent(jButton3)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(43, 43, 43))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addComponent(jButton4)
-                            .addGap(246, 246, 246)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 153, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton7)
+                                .addGap(18, 18, 18)
+                                .addComponent(m7))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(m3))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(43, 43, 43))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                    .addComponent(jButton4)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(m4)
+                                    .addGap(183, 183, 183)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(m1)
+                            .addComponent(m2)
+                            .addComponent(m5)
+                            .addComponent(m6))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(146, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(m1))
                 .addGap(14, 14, 14)
-                .addComponent(jButton4)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton4)
+                    .addComponent(m4))
                 .addGap(30, 30, 30)
-                .addComponent(jButton5)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton5)
+                    .addComponent(m5))
                 .addGap(36, 36, 36)
-                .addComponent(jButton3)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton3)
+                    .addComponent(m3))
                 .addGap(20, 20, 20)
-                .addComponent(jButton6)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton6)
+                    .addComponent(m6))
                 .addGap(30, 30, 30)
-                .addComponent(jButton7)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton7)
+                    .addComponent(m7))
                 .addGap(25, 25, 25)
-                .addComponent(jButton2)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton2)
+                    .addComponent(m2))
                 .addGap(67, 67, 67)
                 .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(34, 34, 34))
@@ -146,50 +220,78 @@ public class Ejercicio extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         Comentario come = new Comentario();
-        come.setVisible(true);
-        dispose();
+        if (!var1) {
+            var1 = true;
+            come.setVisible(true);
+            dispose();
+            m1.setVisible(var1);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         EjercicioIf eje = new EjercicioIf();
-        eje.setVisible(true);
-        dispose();
+        if (!var2) {
+            var2 = true;
+            eje.setVisible(true);
+            dispose();
+            m2.setVisible(var2);
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         EjercicioFor ejef = new EjercicioFor();
-        ejef.setVisible(true);
-        dispose();
+        if (!var3) {
+            var3 = true;
+            ejef.setVisible(true);
+            dispose();
+            m3.setVisible(var3);
+        }
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         EjercicioEscan scaner = new EjercicioEscan();
-        scaner.setVisible(true);
-        dispose();
+        if (!var4) {
+            var4 = true;
+            scaner.setVisible(true);
+            dispose();
+            m4.setVisible(var4);
+        }
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
         Mundo mun = new Mundo();
-        mun.setVisible(true);
-        dispose();
+        if (!var5) {
+            var5 = true;
+            mun.setVisible(true);
+            dispose();
+            m5.setVisible(var5);
+        }
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
         TiposVar var = new TiposVar();
-        var.setVisible(true);
-        dispose();
+        if (!var6) {
+            var6 = true;
+            var.setVisible(true);
+            dispose();
+            m6.setVisible(var6);
+        }
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
         UsoCons cons = new UsoCons();
-        cons.setVisible(true);
-        dispose();
+        if (!var7) {
+            var7 = true;
+            cons.setVisible(true);
+            dispose();
+            m7.setVisible(var7);
+        }
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
@@ -216,5 +318,12 @@ public class Ejercicio extends javax.swing.JFrame {
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
+    private javax.swing.JLabel m1;
+    private javax.swing.JLabel m2;
+    private javax.swing.JLabel m3;
+    private javax.swing.JLabel m4;
+    private javax.swing.JLabel m5;
+    private javax.swing.JLabel m6;
+    private javax.swing.JLabel m7;
     // End of variables declaration//GEN-END:variables
 }
