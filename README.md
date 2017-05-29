@@ -28,6 +28,9 @@ En la app se implementará completar código, para que el usuario desarrolle la 
 ### Diagrama de clases
 ![Diagrama de clases](Diagrama/CodeLine.png)
 
+### Capturas de pantalla de la aplicación
+![Inicio](Diagrama/Pantalla1.png)
+
 
 ### Autor(es)
 El autor(es) del proyecto son:
