@@ -29,22 +29,23 @@ En la app se implementará completar código, para que el usuario desarrolle la 
 ![Diagrama de clases](Diagrama/CodeLine.png)
 
 ### Capturas de pantalla de la aplicación
-![Inicio](Diagrama/Pantalla1.png)
 - Inicio de la aplicación
-![Pantalla Principal](Diagrama/Pantalla2.png)
+![Inicio](Diagrama/Pantalla1.png)
 - Pantalla principal donde se muestran las secciones y ejercicios
-![Pantalla de la sección de Pseudocódigo](Diagrama/Pantalla3.png)
+![Pantalla Principal](Diagrama/Pantalla2.png)
 - Sección donde se encuentran las lecciones introductorias
-![Pantalla de la sección de C](Diagrama/Pantalla4.png)
+![Pantalla de la sección de Pseudocódigo](Diagrama/Pantalla3.png)
 - Sección donde se encuentran las lecciones de C
-![Ejemplo de lección de la sección 1](Diagrama/Pantalla5.png)
+![Pantalla de la sección de C](Diagrama/Pantalla4.png)
 - Lección perteneciente a la sección 1
-![Ejemplo de lección de la sección 2](Diagrama/Pantalla6.png)
+![Ejemplo de lección de la sección 1](Diagrama/Pantalla5.png)
 - Lección perteneciente a la sección 2
-![Menu de ejercicios](Diagrama/Pantalla7.png)
+![Ejemplo de lección de la sección 2](Diagrama/Pantalla6.png)
 - Menu donde se encuentran los ejercicios
-![Ejemplo de ejercicio](Diagrama/Pantalla8.png)
+![Menu de ejercicios](Diagrama/Pantalla7.png)
 - Ejemplo de uno de los ejercicios
+![Ejemplo de ejercicio](Diagrama/Pantalla8.png)
+
 
 
 ### Autor(es)
