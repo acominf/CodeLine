@@ -8,8 +8,7 @@ import javax.swing.JPanel;
 public class Pantalla_Leccion extends javax.swing.JFrame {
 
     public Pantalla_Leccion() {
-        initComponents();
-        
+        initComponents();   
         setLocationRelativeTo(null);
         setResizable(false);
         setTitle("Seccion 1");
@@ -18,7 +17,7 @@ public class Pantalla_Leccion extends javax.swing.JFrame {
         String separador = System.getProperty("file.separator");
         
         ((JPanel)getContentPane()).setOpaque(false);
-        ImageIcon img = new ImageIcon(directorioActual+separador+"src/CodeLine/Images/fondo.png");
+        ImageIcon img = new ImageIcon(directorioActual+separador+"src/CodeLine/Images/pseudo.png");
         JLabel fondo = new JLabel(img);
         fondo.setBounds(-4,-14,img.getIconWidth(),img.getIconHeight());
         getLayeredPane().add(fondo,JLayeredPane.FRAME_CONTENT_LAYER);
@@ -129,46 +128,60 @@ public class Pantalla_Leccion extends javax.swing.JFrame {
                 .addComponent(b_volver, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(35, 35, 35))
             .addGroup(layout.createSequentialGroup()
-                .addGap(106, 106, 106)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton2)
-                    .addComponent(jButton1)
-                    .addComponent(jButton3)
-                    .addComponent(jButton4)
-                    .addComponent(jButton5))
-                .addGap(77, 77, 77)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton6)
-                    .addComponent(jButton7)
-                    .addComponent(jButton8)
-                    .addComponent(jButton9)
-                    .addComponent(jButton10))
-                .addContainerGap(379, Short.MAX_VALUE))
+                .addGap(156, 156, 156)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addComponent(jButton5)
+                        .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton6)
+                        .addGap(249, 249, 249))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton3)
+                            .addComponent(jButton2)
+                            .addComponent(jButton4))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 157, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(jButton7)
+                                .addGap(249, 249, 249))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jButton10)
+                                    .addComponent(jButton8)
+                                    .addComponent(jButton9))
+                                .addGap(241, 241, 241))))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(65, 65, 65)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(156, 156, 156)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton6))
-                .addGap(18, 18, 18)
+                    .addComponent(jButton6)
+                    .addComponent(jButton1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2)
                     .addComponent(jButton7))
-                .addGap(18, 18, 18)
+                .addGap(42, 42, 42)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3)
-                    .addComponent(jButton8))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton4)
-                    .addComponent(jButton9))
-                .addGap(18, 18, 18)
+                    .addComponent(jButton8)
+                    .addComponent(jButton3))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addComponent(jButton4))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(56, 56, 56)
+                        .addComponent(jButton9)))
+                .addGap(58, 58, 58)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton5)
                     .addComponent(jButton10))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 267, Short.MAX_VALUE)
+                .addGap(60, 60, 60)
                 .addComponent(b_volver, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(17, 17, 17))
         );
@@ -185,10 +198,6 @@ public class Pantalla_Leccion extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        /*Lecciones lecc = new Lecciones();
-        lecc.setVisible(true);
-        lecc.leeLeccion("Arreglos", "Seccion1");
-        dispose();*/
         Arreglos arre = new Arreglos();
         arre.setVisible(true);
         dispose();
@@ -196,10 +205,6 @@ public class Pantalla_Leccion extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        /*ecciones lecc = new Lecciones();
-        lecc.setVisible(true);
-        lecc.leeLeccion("Arreglos multidimensionales", "Seccion1");
-        dispose();*/
         Arreglos_Multi mul = new Arreglos_Multi();
         mul.setVisible(true);
         dispose();
@@ -208,10 +213,6 @@ public class Pantalla_Leccion extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        /*Lecciones lecc = new Lecciones();
-        lecc.setVisible(true);
-        lecc.leeLeccion("Pilas", "Seccion1");
-        dispose();*/
         Pilas pila = new Pilas();
         pila.setVisible(true);
         dispose();
@@ -219,10 +220,6 @@ public class Pantalla_Leccion extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-        /*Lecciones lecc = new Lecciones();
-        lecc.setVisible(true);
-        lecc.leeLeccion("Colas", "Seccion1");
-        dispose();*/
         Colas col = new Colas();
         col.setVisible(true);
         dispose();
@@ -230,10 +227,6 @@ public class Pantalla_Leccion extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        /*Lecciones lecc = new Lecciones();
-        lecc.setVisible(true);
-        lecc.leeLeccion("Recursividad", "Seccion1");
-        dispose();*/
         Recursividad recu = new Recursividad();
         recu.setVisible(true);
         dispose();
@@ -241,10 +234,6 @@ public class Pantalla_Leccion extends javax.swing.JFrame {
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-        /*Lecciones lecc = new Lecciones();
-        lecc.setVisible(true);
-        lecc.leeLeccion("Arboles", "Seccion1");
-        dispose();*/
         Arboles arbol = new Arboles();
         arbol.setVisible(true);
         dispose();
@@ -252,10 +241,6 @@ public class Pantalla_Leccion extends javax.swing.JFrame {
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
-        /*Lecciones lecc = new Lecciones();
-        lecc.setVisible(true);
-        lecc.leeLeccion("Arboles Binarios", "Seccion1");
-        dispose();*/
         Arbol_Bin bina = new Arbol_Bin();
         bina.setVisible(true);
         dispose();
@@ -263,10 +248,6 @@ public class Pantalla_Leccion extends javax.swing.JFrame {
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
-        /*Lecciones lecc = new Lecciones();
-        lecc.setVisible(true);
-        lecc.leeLeccion("Arboles-B", "Seccion1");
-        dispose();*/
         Arbol_B arbol = new Arbol_B();
         arbol.setVisible(true);
         dispose();
@@ -274,10 +255,6 @@ public class Pantalla_Leccion extends javax.swing.JFrame {
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
-        /*Lecciones lecc = new Lecciones();
-        lecc.setVisible(true);
-        lecc.leeLeccion("Listas", "Seccion1");
-        dispose();*/
         Listas list = new Listas();
         list.setVisible(true);
         dispose();
@@ -285,10 +262,6 @@ public class Pantalla_Leccion extends javax.swing.JFrame {
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
-        /*Lecciones lecc = new Lecciones();
-        lecc.setVisible(true);
-        lecc.leeLeccion("Grafos", "Seccion1");
-        dispose();*/
         Grafos graf = new Grafos();
         graf.setVisible(true);
         dispose();

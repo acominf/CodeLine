@@ -1,9 +1,26 @@
 package CodeLine;
 
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JLayeredPane;
+import javax.swing.JPanel;
+
 public class Captura extends javax.swing.JFrame {
 
     public Captura() {
         initComponents();
+        setLocationRelativeTo(null);
+        setResizable(false);
+        setTitle("Captura");
+        
+        String directorioActual = System.getProperty("user.dir");
+        String separador = System.getProperty("file.separator");
+        
+        ((JPanel)getContentPane()).setOpaque(false);
+        ImageIcon img = new ImageIcon(directorioActual+separador+"src/CodeLine/Images/fondo.png");
+        JLabel fondo = new JLabel(img);
+        fondo.setBounds(-4,-14,img.getIconWidth(),img.getIconHeight());
+        getLayeredPane().add(fondo,JLayeredPane.FRAME_CONTENT_LAYER);
     }
 
     @SuppressWarnings("unchecked")

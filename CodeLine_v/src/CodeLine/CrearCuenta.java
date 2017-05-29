@@ -12,12 +12,14 @@ public class CrearCuenta extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setResizable(false);
         setTitle("Crear Cuenta");
+        b_borrarImagen.setVisible(false);
+        b_cargarImagen.setVisible(false);
         
         String directorioActual = System.getProperty("user.dir");
         String separador = System.getProperty("file.separator");
         
         ((JPanel)getContentPane()).setOpaque(false);
-        ImageIcon img = new ImageIcon(directorioActual+separador+"src/CodeLine/Images/fondo.png");
+        ImageIcon img = new ImageIcon(directorioActual+separador+"src/CodeLine/Images/cuenta.png");
         JLabel fondo = new JLabel(img);
         fondo.setBounds(-4,-14,img.getIconWidth(),img.getIconHeight());
         getLayeredPane().add(fondo,JLayeredPane.FRAME_CONTENT_LAYER);
@@ -59,14 +61,19 @@ public class CrearCuenta extends javax.swing.JFrame {
             }
         });
 
+        l_nombre.setForeground(new java.awt.Color(255, 255, 255));
         l_nombre.setText("Nombre Completo:");
 
+        l_usuario.setForeground(new java.awt.Color(255, 255, 255));
         l_usuario.setText("Usuario:");
 
+        l_correo.setForeground(new java.awt.Color(255, 255, 255));
         l_correo.setText("Correo:");
 
+        l_contrasena.setForeground(new java.awt.Color(255, 255, 255));
         l_contrasena.setText("Contraseña:");
 
+        l_confirmar.setForeground(new java.awt.Color(255, 255, 255));
         l_confirmar.setText("Confirmar Contraseña:");
         l_confirmar.setToolTipText("");
 

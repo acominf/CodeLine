@@ -38,4 +38,17 @@ public class CheckString
         }
         return palabra;
     }
+    
+    public boolean StringToString(String cad1, String cad2)
+    {
+        for(int i = 0; i < cad1.length() && i < cad2.length(); i++)
+        {
+            if(cad1.charAt(i) != cad2.charAt(i))
+                return false;
+        }
+        if(cad1.length() != cad2.length())
+            return false;
+        else
+            return true;
+    }
 }

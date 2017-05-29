@@ -24,7 +24,7 @@ public class Sesion extends javax.swing.JFrame {
         String separador = System.getProperty("file.separator");
         
         ((JPanel)getContentPane()).setOpaque(false);
-        ImageIcon img = new ImageIcon(directorioActual+separador+"src/CodeLine/Images/Sesion.png");
+        ImageIcon img = new ImageIcon(directorioActual+separador+"src/CodeLine/Images/sesionfondo.png");
         JLabel fondo = new JLabel(img);
         fondo.setBounds(-4,-14,img.getIconWidth(),img.getIconHeight());
         getLayeredPane().add(fondo,JLayeredPane.FRAME_CONTENT_LAYER);

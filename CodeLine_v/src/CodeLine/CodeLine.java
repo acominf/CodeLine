@@ -16,7 +16,7 @@ public class CodeLine extends javax.swing.JFrame {
         String separador = System.getProperty("file.separator");
         
         ((JPanel)getContentPane()).setOpaque(false);
-        ImageIcon img = new ImageIcon(directorioActual+separador+"src/CodeLine/Images/fondo.png");
+        ImageIcon img = new ImageIcon(directorioActual+separador+"src/CodeLine/Images/bienvenida2.png");
         JLabel fondo = new JLabel(img);
         fondo.setBounds(-4,-14,img.getIconWidth(),img.getIconHeight());
         getLayeredPane().add(fondo,JLayeredPane.FRAME_CONTENT_LAYER);
@@ -28,18 +28,15 @@ public class CodeLine extends javax.swing.JFrame {
         l_codeline = new javax.swing.JLabel();
         b_seccion2 = new javax.swing.JButton();
         b_ejercicios = new javax.swing.JButton();
-        l_bienvenida = new javax.swing.JLabel();
         b_seccion1 = new javax.swing.JButton();
-        l_vision = new javax.swing.JLabel();
-        l_mision = new javax.swing.JLabel();
         l_autores = new javax.swing.JLabel();
-        l_contenidomision = new javax.swing.JLabel();
-        l_contenidovision1 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         l_codeline.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        l_codeline.setForeground(new java.awt.Color(255, 255, 255));
         l_codeline.setText("CodeLine: Aprende a programar.");
 
         b_seccion2.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
@@ -58,10 +55,6 @@ public class CodeLine extends javax.swing.JFrame {
             }
         });
 
-        l_bienvenida.setFont(new java.awt.Font("Comic Sans MS", 0, 36)); // NOI18N
-        l_bienvenida.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        l_bienvenida.setText("Bienvenid@");
-
         b_seccion1.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         b_seccion1.setText("Pseudocódigo");
         b_seccion1.addActionListener(new java.awt.event.ActionListener() {
@@ -70,15 +63,8 @@ public class CodeLine extends javax.swing.JFrame {
             }
         });
 
-        l_vision.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        l_vision.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        l_vision.setText("Visión:");
-
-        l_mision.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
-        l_mision.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        l_mision.setText("Misión:");
-
         l_autores.setFont(new java.awt.Font("Cambria", 0, 14)); // NOI18N
+        l_autores.setForeground(new java.awt.Color(255, 255, 255));
         l_autores.setText("Creado por: Rodrigo González y Efraín Morín.");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -92,29 +78,20 @@ public class CodeLine extends javax.swing.JFrame {
                         .addComponent(l_autores))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
+                        .addComponent(b_seccion1, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(l_codeline)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(l_mision, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(b_seccion1, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(l_codeline)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(b_seccion2, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(b_ejercicios, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(l_vision, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(l_contenidovision1, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                                .addGap(0, 13, Short.MAX_VALUE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(l_contenidomision, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(39, 39, 39)
-                                .addComponent(l_bienvenida)
-                                .addGap(76, 300, Short.MAX_VALUE)))))
+                                .addComponent(b_seccion2, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(b_ejercicios, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 16, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(354, 354, 354)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -126,21 +103,9 @@ public class CodeLine extends javax.swing.JFrame {
                     .addComponent(b_ejercicios, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(b_seccion2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(b_seccion1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(l_mision)
-                    .addComponent(l_vision))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(l_bienvenida, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(28, 28, 28)
-                        .addComponent(l_contenidomision, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(l_contenidovision1, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 221, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 279, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(150, 150, 150)
                 .addComponent(l_autores)
                 .addContainerGap())
         );
@@ -150,7 +115,6 @@ public class CodeLine extends javax.swing.JFrame {
 
     private void b_seccion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_seccion1ActionPerformed
         // TODO add your handling code here:
-        //seleccionado();
         Pantalla_Leccion pant = new Pantalla_Leccion();
         pant.setVisible(true);
         dispose();
@@ -158,7 +122,6 @@ public class CodeLine extends javax.swing.JFrame {
 
     private void b_seccion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_seccion2ActionPerformed
         // TODO add your handling code here:
-        //seleccionado();
         PantallaC pant = new PantallaC();
         pant.setVisible(true);
         dispose();
@@ -166,7 +129,6 @@ public class CodeLine extends javax.swing.JFrame {
 
     private void b_ejerciciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_ejerciciosActionPerformed
         // TODO add your handling code here:
-        //seleccionado();
         Ejercicio ejer = new Ejercicio();
         ejer.setVisible(true);
         dispose();
@@ -185,13 +147,9 @@ public class CodeLine extends javax.swing.JFrame {
     private javax.swing.JButton b_ejercicios;
     private javax.swing.JButton b_seccion1;
     private javax.swing.JButton b_seccion2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel l_autores;
-    private javax.swing.JLabel l_bienvenida;
     private javax.swing.JLabel l_codeline;
-    private javax.swing.JLabel l_contenidomision;
-    private javax.swing.JLabel l_contenidovision1;
-    private javax.swing.JLabel l_mision;
-    private javax.swing.JLabel l_vision;
     // End of variables declaration//GEN-END:variables
 
 }
