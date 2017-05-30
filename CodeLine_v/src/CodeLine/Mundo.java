@@ -170,8 +170,11 @@ public class Mundo extends javax.swing.JFrame {
     private void b_compruebaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_compruebaActionPerformed
         // TODO add your handling code here:
         CheckString c = new CheckString();
-        if(c.StringToString(valida1.getText(), "Mi Primer Hola Mundo"))
+        if(c.StringToString(valida1.getText(), "Mi Primer Hola Mundo")){
             b_regresar.setVisible(true);
+        }
+        else
+            javax.swing.JOptionPane.showMessageDialog(null,"Mal");
     }//GEN-LAST:event_b_compruebaActionPerformed
 
     public static void main(String args[]) {

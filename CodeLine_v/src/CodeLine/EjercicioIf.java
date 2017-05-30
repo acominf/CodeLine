@@ -261,6 +261,8 @@ public class EjercicioIf extends javax.swing.JFrame {
         rb_opcion2.setSelected(false);
         rb_opcion3.setSelected(false);
         rb_opcion4.setSelected(false);
+        javax.swing.JOptionPane.showMessageDialog(null,"Mal");
+        ventana();
     }//GEN-LAST:event_rb_opcion1ActionPerformed
 
     private void rb_opcion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb_opcion2ActionPerformed
@@ -269,6 +271,8 @@ public class EjercicioIf extends javax.swing.JFrame {
         rb_opcion2.setSelected(true);
         rb_opcion3.setSelected(false);
         rb_opcion4.setSelected(false);
+        javax.swing.JOptionPane.showMessageDialog(null,"Mal");
+        ventana();
     }//GEN-LAST:event_rb_opcion2ActionPerformed
 
     private void rb_opcion3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb_opcion3ActionPerformed
@@ -277,7 +281,8 @@ public class EjercicioIf extends javax.swing.JFrame {
         rb_opcion2.setSelected(false);
         rb_opcion3.setSelected(true);
         rb_opcion4.setSelected(false);
-        b_regresar.setVisible(true);
+        javax.swing.JOptionPane.showMessageDialog(null,"Bien");
+        ventana();
     }//GEN-LAST:event_rb_opcion3ActionPerformed
 
     private void rb_opcion4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb_opcion4ActionPerformed
@@ -286,8 +291,16 @@ public class EjercicioIf extends javax.swing.JFrame {
         rb_opcion2.setSelected(false);
         rb_opcion3.setSelected(false);
         rb_opcion4.setSelected(true);
+        javax.swing.JOptionPane.showMessageDialog(null,"Mal");
+        ventana();
     }//GEN-LAST:event_rb_opcion4ActionPerformed
 
+    public void ventana()
+    {
+        Ejercicio eje = new Ejercicio();
+        eje.setVisible(true);
+        dispose();
+    }
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

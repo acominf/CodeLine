@@ -3,6 +3,7 @@ package CodeLine;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 public class UsoCons extends javax.swing.JFrame {
@@ -219,19 +220,31 @@ public class UsoCons extends javax.swing.JFrame {
 
     private void b_comprobarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_comprobarActionPerformed
         // TODO add your handling code here:
+        String s1 = "Mal"; String s2 = "Mal"; String s3 = "Mal";
         CheckString c = new CheckString(); CheckString b = new CheckString();
         CheckString a = new CheckString(); CheckString d = new CheckString();
         if(c.StringToString(valida1.getText(),"stdio.h") && c.StringToString(valida2.getText(), "PI") && c.StringToString(valida3.getText(), "3.1416"))
             b_regresar.setVisible(true);
+
         if(!a.StringToString(valida1.getText(),"stdio.h"))
             valida1.setText("");
+        else
+            s1 = "Bien";
         if(!b.StringToString(valida2.getText(), "PI"))
             valida2.setText("");
+        else
+            s2 = "Bien";
         if(!d.StringToString(valida3.getText(), "3.1416"))
             valida3.setText("");
-            
+        else
+            s3 = "Bien";
+         mensaje(s1+"\n"+s2+"\t "+s3);   
     }//GEN-LAST:event_b_comprobarActionPerformed
 
+    public void mensaje(String msj)
+    {
+        JOptionPane.showMessageDialog(null,msj);
+    }
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

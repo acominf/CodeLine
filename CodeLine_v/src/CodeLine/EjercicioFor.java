@@ -216,6 +216,8 @@ public class EjercicioFor extends javax.swing.JFrame {
         rb_op1.setSelected(true);
         rb_op2.setSelected(false);
         rb_op3.setSelected(false);
+        javax.swing.JOptionPane.showMessageDialog(null,"Respuesta Incorrecta");
+        ventana();
     }//GEN-LAST:event_rb_op1ActionPerformed
 
     private void rb_op2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb_op2ActionPerformed
@@ -224,6 +226,8 @@ public class EjercicioFor extends javax.swing.JFrame {
         rb_op2.setSelected(true);
         rb_op3.setSelected(false);
         b_regresar.setVisible(true);
+        javax.swing.JOptionPane.showMessageDialog(null,"Respuesta Correcta");
+        ventana();
     }//GEN-LAST:event_rb_op2ActionPerformed
 
     private void rb_op3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb_op3ActionPerformed
@@ -231,8 +235,16 @@ public class EjercicioFor extends javax.swing.JFrame {
         rb_op1.setSelected(false);
         rb_op2.setSelected(false);
         rb_op3.setSelected(true);
+        javax.swing.JOptionPane.showMessageDialog(null,"Respuesta Incorrecta");
+        ventana();
     }//GEN-LAST:event_rb_op3ActionPerformed
 
+    public void ventana()
+    {
+        Ejercicio eje = new Ejercicio();
+        eje.setVisible(true);
+        dispose();
+    }
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

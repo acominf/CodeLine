@@ -3,6 +3,7 @@ package CodeLine;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 public class TiposVar extends javax.swing.JFrame {
@@ -299,7 +300,8 @@ public class TiposVar extends javax.swing.JFrame {
         CheckString c = new CheckString();
         CheckString a = new CheckString(); CheckString d = new CheckString();
         CheckString b = new CheckString(); CheckString e = new CheckString();
-        
+        String s1 = "Mal"; String s3 = "Mal"; String s5 = "Mal"; String s7 = "Mal";
+        String s2 = "Mal"; String s4 = "Mal"; String s6 = "Mal"; String s8 = "Mal";
         if(c.StringToString(valida1_1.getText(), "int") && c.StringToString(valida1_2.getText(), "0") &&
                 c.StringToString(valida2_1.getText(), "char") && c.StringToString(valida2_2.getText(), "c") &&
                 c.StringToString(valida3_1.getText(), "double") && c.StringToString(valida3_2.getText(), "1.23456") &&
@@ -307,26 +309,46 @@ public class TiposVar extends javax.swing.JFrame {
             b_regresar.setVisible(true);
         if(!a.StringToString(valida1_1.getText(), "int"))
             valida1_1.setText("");
+        else
+            s1 = "Bien";
         if(!a.StringToString(valida1_2.getText(), "0"))
             valida1_2.setText("");
+        else
+            s2 = "Bien";
         
         if(!b.StringToString(valida2_1.getText(), "char"))
             valida2_1.setText("");
+        else
+            s3 = "Bien";
         if(!b.StringToString(valida2_2.getText(), "c"))
             valida2_2.setText("");
+        else
+            s4 = "Bien";
         
         if(!d.StringToString(valida3_1.getText(), "double"))
             valida3_1.setText("");
+        else
+            s5 = "Bien";
         if(!d.StringToString(valida3_2.getText(), "1.23456"))
             valida3_2.setText("");
+        else
+            s6 = "Bien";
        
         if(!e.StringToString(valida4_1.getText(), "float"))
-                valida4_1.setText(""); 
+                valida4_1.setText("");
+        else
+            s7 = "Bien";
         if(!e.StringToString(valida4_2.getText(), "3.1416"))
                 valida4_2.setText("");
-        
+        else
+            s8 = "Bien";
+        mensaje(s1+"\t "+s2+"\n"+s3+"\t "+s4+"\n"+s5+"\t "+s6+"\n"+s7+"\t "+s8);
     }//GEN-LAST:event_b_compruebaActionPerformed
 
+    public void mensaje(String msj)
+    {
+        JOptionPane.showMessageDialog(null,msj);
+    }
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
