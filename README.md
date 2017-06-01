@@ -50,8 +50,8 @@ En la app se implementará completar código, para que el usuario desarrolle la 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4DlcasayUb4" frameborder="0" allowfullscreen></iframe>
 
 ### Archivo Ejecutable
-<a src="https://github.com/acominf/CodeLine/releases/download/v1.1/CodeLine.jar">CodeLine.jar<a/>
-<a src="https://github.com/acominf/CodeLine/releases/download/v1.1/srcv1.1.zip">Source.zip<a/>
+[CodeLine.jar](https://github.com/acominf/CodeLine/releases/download/v1.1/CodeLine.jar)
+[Source.zip](https://github.com/acominf/CodeLine/releases/download/v1.1/srcv1.1.zip)
 
 ### Autor(es)
 El autor(es) del proyecto son:
